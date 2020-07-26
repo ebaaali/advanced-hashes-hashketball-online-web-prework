@@ -156,7 +156,7 @@ def team_colors (given_team)
   team_colors = []
   game_hash.each do |team, info|
     if info[:team_name] = given_team
-      team_colors = info[:colors]
+      return info[:colors]
     end
   end
 end
