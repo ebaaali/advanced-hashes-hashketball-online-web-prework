@@ -126,4 +126,61 @@ def game_hash
   }
 end
 
-# Write code here
+def num_points_scored (given_player)
+  points_scored = nil
+  game_hash.each do |team, info|
+    info[:players].each do |player|
+      if player[:player_name] == given_player
+        points_scored = player[:points]
+      end
+    end
+  end
+  points_scored
+end
+
+
+def shoe_size (given_player)
+  size = nil
+  game_hash.each do |team,info|
+    info[:players].each do |player|
+      if player[:player_name] == given_player
+        size = player[:shoe]
+      end
+    end
+  end
+  size
+end
+
+
+def team_colors (given_team)
+  
+end
+
+
+
+def team_names 
+  
+end
+
+
+
+
+
+def player_numbers (given_team)
+
+end
+
+
+def player_stats (given_player)
+  
+end
+
+
+
+def big_shoe_rebounds
+  
+end
+
+
+
+
