@@ -159,6 +159,8 @@ end
 
 
 def team_names 
+  both_teams = []
+  game_hash.each do 
   
 end
 
