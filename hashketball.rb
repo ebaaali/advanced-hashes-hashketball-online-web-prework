@@ -160,8 +160,10 @@ end
 
 def team_names 
   both_teams = []
-  game_hash.each do 
-  
+  game_hash.each do |team, info|
+    both_teams.push(info[team_name])
+  end
+  both_teams
 end
 
 
