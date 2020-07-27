@@ -180,7 +180,13 @@ end
 
 
 def player_stats (given_player)
-  
+  game_hash.each do |team,info|
+    info[:players].each do |player|
+      if player[:player_name] == given_player
+        return player
+      end
+    end
+  end
 end
 
 
